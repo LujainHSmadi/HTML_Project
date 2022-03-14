@@ -16,8 +16,15 @@ header{
     padding: 10px 200px;
 }
 
+
+
 section{
     padding: 100px 200px;
+}
+.project-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
 }
 
 
@@ -256,6 +263,7 @@ font-size: 4.5em;
     padding:2em;
     display:flex ;
     justify-content: space-between;
+    height: 20vh;
     
 }
 .footer-title{
@@ -269,31 +277,24 @@ font-size: 4.5em;
 .footer .social-icons a{
     text-decoration: none;
 }
+#footer-nav a{
+    text-decoration: none;
+    color: #fff;
+}
 
 
 
-
-  
-
-
-
-
+#footer-nav a:hover{
+text-decoration: none !important;
+       color: rgb(48, 124, 224);
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-@media (max-width:641px) and (min-width:411px) {
+@media (max-width:1023px) and (min-width:411px) {
     body{
         font-size: 12px;
+        padding-top:200px;
     }
     .main h2{
         font-size: 0.8em;
@@ -302,9 +303,59 @@ font-size: 4.5em;
         font-size: 1.4em;
 
     }
+
+#footer-nav a{
+    display: none;
 }
 
-@media (max-width:410px) {
+}
+
+@media (max-width:640px) and (min-width:425px) {
+    .main {
+    padding:0;
+  
+    
+    }
+    .navbar-nav {
+    margin: 7.5px -15px;
+}
+
+    body{
+        font-size: 12px;
+        padding-top:200px;
+    }
+
+
+#footer-nav a{
+    display: none;
+}
+
+footer{
+    font-size: 0.5em;
+}
+#a{
+    padding: 0;
+}
+ #caption, #about{
+        display:none ;
+        border: red 1px solid;
+    }
+    header div .nav{
+        display: inline;
+        margin-left:0;
+    }
+      header div .nav{
+        display: inline;
+        margin-left:0;
+    }
+}
+
+@media (max-width:424px) {
+    body{
+        font-size: 12px;
+        padding-top:200px;
+    }
+
     header{
         padding: 12px 20px;
         margin: 0;
@@ -323,4 +374,18 @@ font-size: 4.5em;
         font-size: 1.4em;
         
     }
+      header div .nav{
+        display: inline;
+        margin-left:0;
+    }
+
+#footer-nav a{
+    display: none;
+}
+
+footer{
+    font-size: 0.5em;
+}
+
+
 }
